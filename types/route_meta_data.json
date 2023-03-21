@@ -1,8 +1,0 @@
-{
-	"/": [
-		"src/routes/+page.ts"
-	],
-	"/xkcd_fetcher": [
-		"src/routes/xkcd_fetcher/+page.ts"
-	]
-}
