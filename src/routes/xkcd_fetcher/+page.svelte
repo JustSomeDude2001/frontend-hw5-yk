@@ -28,9 +28,11 @@
 	<meta name="description" content="Simple XKCD comic fetcher" />
 </svelte:head>
 
-{#if comicLoaded}
+<div>
     <p>Random XKCD comic (Note, it may take time to load.)</p>
-    <h1>{fetcher.comicTitle}</h1>
-    <img src="{fetcher.comicImage}" alt="{fetcher.comicAlt}">
-    <p>Uploaded on {fetcher.comicDate}</p>
-{/if}
+    {#if comicLoaded}
+        <h1>{fetcher.comicTitle}</h1>
+        <img src="{fetcher.comicImage}" alt="{fetcher.comicAlt}">
+        <p>Uploaded on {fetcher.comicDate}</p>
+    {/if}
+</div>
